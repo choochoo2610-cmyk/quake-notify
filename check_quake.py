@@ -22,5 +22,5 @@ def main():
 
     now = datetime.now(timezone.utc)
 
-    if now - latest >= timedelta(hours=24):
+    if now - latest >= timedelta(seconds=1):
         send(f"✅ 24時間以上 地震なし\n最終時刻: {latest}")
